@@ -13,9 +13,12 @@ This is a **Python-based password security tool** that checks whether a given pa
 2. The **first 5 characters** of the hash are sent to the API.  
 3. The API returns a list of potential password hashes.  
 4. The script checks if the full hash exists in the database.  
-5. If found, it informs the user how many times the password has been leaked.  
+5. If found, it informs the user how many times the password has been leaked.
 
-## 🛠 Installation & Usage  
+## ⚠️ Security Note  
+This tool never sends your full password to an external server, ensuring privacy and security.
+
+## 🛠 Installation & Usage 
 ### 🔧 Prerequisites  
 - Python 3.x  
 - `requests` library (install using `pip install requests`)  
@@ -26,9 +29,5 @@ python password_checker.py yourpassword123
 
 #Example Output
 
-Your Password: (yourpassword123) was FOUND 5000 times.. you should change it
-
-⚠️ Security Note
-This tool never sends your full password to an external server, ensuring privacy and security.
-
+Your Password: (yourpassword123) was FOUND 5000 times.. you should change it 
 
